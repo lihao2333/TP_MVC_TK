@@ -9,8 +9,8 @@ class View(base.BView):
         Label(self.root,text='Zl_Image').grid(row=1,column=1)
         self.zl_r = Scale(self.root, from_=0.0, to=5.0 , resolution=0.1,orient=HORIZONTAL)  
         self.zl_i = Scale(self.root, from_=-5.0, to=5.0, resolution=0.1,orient=HORIZONTAL)  
-        self.zl_r.set(2)
-        self.zl_i.set(20)
+        self.zl_r.set(1)
+        self.zl_i.set(1)
         self.zl_r.grid(row = 1, column=0)
         self.zl_i.grid(row = 1, column=1)
 

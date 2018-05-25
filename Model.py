@@ -79,7 +79,7 @@ class Model(base.BModel):
     def draw_circle(self, xy, redius,edgecolor='green'):
         self.axes.add_patch(pCircle(xy=xy,radius= redius,alpha=0.5,linestyle='-.',edgecolor=edgecolor,facecolor='none'))
     def draw_smith(self,P):
-        self.draw_circle(P.center_real, P.radius_real, 'blue')
+        self.draw_circle(P.center_real, P.radius_real, 'red')
         self.draw_circle(P.center_imag, P.radius_imag, 'pink')
         pass
     def draw_reflect(self, P):
