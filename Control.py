@@ -20,8 +20,6 @@ class Control(object):
         self.view.btn_next.config(command=self.fun_next)
         self.view.zl_r.config(command=self.update_zl_r)
         self.view.zl_i.config(command=self.update_zl_i)
-        #self.view.z0_r.config(command=self.update_z0_r)
-        #self.view.z0_i.config(command=self.update_z0_i)
 
     def fun_next(self):
         self.model.state +=1
