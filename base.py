@@ -10,8 +10,6 @@ class BView(object):
         self.canvas = FigureCanvasTkAgg(figure, master = self.root)
         self.canvas.draw()
         self.canvas.get_tk_widget().grid(row=0, column=0, columnspan=9)
-
-
         self.btn_back = Button(self.root, text="Back")
         self.btn_back.grid(row=1, column=4)
         self.btn_ok = Button(self.root, text="OK")
@@ -27,6 +25,7 @@ class BModel(object):
         self.state = 0
         self.todo =[]
     def redraw(self):
+
         cnt_state = len(self.todo)
         if self.state==-1 :self.state+=1
         if self.state==len(self.todo): self.state-=1
