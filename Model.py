@@ -110,5 +110,8 @@ class Model(base.BModel):
     def draw_line(self,start,end):
         line = lines.Line2D(*zip(start,end),linestyle="--",color='green',alpha = 0.5)
         self.axes.add_line(line) 
+    def draw_line_(self, start, end):
+        line = lines.Line2D((start.x, end.x),(start.y, end.y),linestyle="--",color='green',alpha = 0.5)
+        self.axes.add_line(line) 
     
     
